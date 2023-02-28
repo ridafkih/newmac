@@ -32,7 +32,7 @@ sudo chsh -s /opt/homebrew/bin/bash $(whoami)
 
 ```bash
 bash
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bashrc
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
@@ -74,7 +74,7 @@ My preferred, very simple terminal configuration.
 ### Install Preferred Nerd Font
 
 ```bash
-brew tap homebrew/cask-fonts &&
+brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font 
 ```
 
@@ -82,7 +82,7 @@ brew install --cask font-jetbrains-mono-nerd-font
 
 ```bash
 brew install starship
-echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
+echo "eval \"\$(starship init bash)\"" >> ~/.bash_profile
 ```
 
 ## Development Tools
