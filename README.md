@@ -67,7 +67,8 @@ My preferred dock applications & order.
 5. Screen Studio
 6. 1Password
 7. Visual Studio Code
-8. Apple Music
+8. Discord
+9. Apple Music
 
 ## Terminal Configuration
 My preferred, very simple terminal configuration.
