@@ -9,6 +9,7 @@ I prefer bash, so we'll set this as the default Terminal shell.
 
 ```sh
 chsh -s /bin/bash
+bash
 ```
 
 ## Xcode CLI Installation
