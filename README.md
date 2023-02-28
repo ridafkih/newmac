@@ -11,6 +11,11 @@ This installs the XCode CLI and development tools without having to download any
 xcode-select --install
 ```
 
+## Brew Installation
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 ## CLI Software Installation
 This installs all my preferred software without having to navigate about the web and install them manually.
 
