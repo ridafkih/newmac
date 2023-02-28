@@ -11,6 +11,13 @@ This installs the XCode CLI and development tools without having to download any
 xcode-select --install
 ```
 
+## Git Configuration
+
+```bash
+git config --global user.name "Rida F'kih"
+git config --global user.email "hello@rida.dev"
+```
+
 ## Brew Installation
 Homebrew will be used to install all applications and CLI tools made available through its repositories.
 
