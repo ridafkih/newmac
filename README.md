@@ -100,3 +100,6 @@ brew install node
 npm i -g pnpm@latest
 ```
 
+## Visual Studio Code Settings
+
+[TBD]
