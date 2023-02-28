@@ -4,14 +4,6 @@ The following are softwares that should be installed through the official Apple 
 1. Final Cut Pro
 2. Xcode
 
-## Set CLI to Bash
-I prefer bash, so we'll set this as the default Terminal shell.
-
-```sh
-chsh -s /bin/bash
-bash
-```
-
 ## Xcode CLI Installation
 This installs the XCode CLI and development tools without having to download anything manually.
 
@@ -25,12 +17,22 @@ Homebrew will be used to install all applications and CLI tools made available t
 ### Download & Install
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-### Complete Configuration
+### Set CLI to Bash
 
 ```bash
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
+brew update
+brew install bash
+sudo chsh -s /opt/homebrew/bin/bash $(whoami)
+```
+
+### Complete Bash & Brew Configuration
+
+```bash
+bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
@@ -66,22 +68,6 @@ My preferred dock applications & order.
 7. Visual Studio Code
 8. Apple Music
 
-## Development Tools
-Various development tools that I use on a day-to-day basis.
-
-### Install NPM
-
-```bash
-brew update
-brew install node
-```
-
-### Install PNPM
-
-```bash
-npm i -g pnpm@latest
-```
-
 ## Terminal Configuration
 My preferred, very simple terminal configuration.
 
@@ -97,5 +83,20 @@ brew install --cask font-jetbrains-mono-nerd-font
 ```bash
 brew install starship
 echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
+```
+
+## Development Tools
+Various development tools that I use on a day-to-day basis.
+
+### Install NPM
+
+```bash
+brew install node
+```
+
+### Install PNPM
+
+```bash
+npm i -g pnpm@latest
 ```
 
