@@ -49,6 +49,7 @@ brew install --cask cleanshot
 brew install --cask figma
 brew install --cask audio-hijack
 brew install --cask loopback
+brew install --cask discord
 ```
 
 ## Web Software Installations
