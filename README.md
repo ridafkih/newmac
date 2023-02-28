@@ -4,6 +4,13 @@ The following are softwares that should be installed through the official Apple 
 1. Final Cut Pro
 2. Xcode
 
+## Set CLI to Bash
+I prefer bash, so we'll set this as the default Terminal shell.
+
+```sh
+chsh -s /bin/bash
+```
+
 ## Xcode CLI Installation
 This installs the XCode CLI and development tools without having to download anything manually.
 
@@ -12,8 +19,18 @@ xcode-select --install
 ```
 
 ## Brew Installation
+Homebrew will be used to install all applications and CLI tools made available through its repositories.
+
+### Download & Install
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Complete Configuration
+
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 ## CLI Software Installation
