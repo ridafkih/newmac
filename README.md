@@ -1,4 +1,4 @@
-# Setup.MacOS
+# NewMac
 My personal MacOS configuration, for new devices both personal and professional.
 
 ## Prerequisites
