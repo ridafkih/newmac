@@ -85,3 +85,9 @@ success "configured: karabiner elements"
 await "configuring: rectangle"
 wget -O ~/Library/Preferences/com.knollsoft.Rectangle.plist https://github.com/ridafkih/setup.macos/raw/main/configs/com.knollsoft.Rectangle.plist
 success "configured: rectangle"
+
+await "generating: ssh key"
+yes 'y' | ssh-keygen -f ~/.ssh/setup-key -t ed25519 -N "" -q >> /dev/null
+await "copying: public key"
+cat ~/.ssh/setup-key.pub | pbcopy 
+success "copied: public key copied to clipboard, paste it into your github settings under ssh & gpg settings"
