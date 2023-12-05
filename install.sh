@@ -34,28 +34,44 @@ await "cli has been set to bash"
 
 await "installing applications..."
 brew install --cask arc
+brew install --cask alt-tab
 brew install --cask linear-linear
 brew install --cask raycast
 brew install --cask 1password
 brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask cleanshot
+brew install --cask coteditor
 brew install --cask figma
+brew install --cask fig
+brew install --caks hiddenbar
 brew install --cask audio-hijack
 brew install --cask loopback
 brew install --cask discord
 brew install --cask karabiner-elements
+brew install --caks stats
+brew install --cask swift-quit
+brew install --cask clean-me
+brew install --cask wezterm
+
 success "installed: arc"
 success "installed: linear"
 success "installed: raycast"
 success "installed: 1password"
 success "installed: rectangle"
 success "installed: vscode"
+success "installed: hiddenbar"
 success "installed: cleanshot x"
+success "installed: clean-me"
+success "installed: coteditor"
 success "installed: figma"
+success "installed: fig"
 success "installed: audio hijack"
 success "installed: loopback audio"
 success "installed: discord"
+success "installed: stats"
+success "installed: swift-quit"
+success "installed: wezterm"
 success "installed: karabiner elements"
 
 await "installing: wget"
